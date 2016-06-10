@@ -1,0 +1,15 @@
+type Player {
+  id: ID
+  name: String
+  dateofbirth: String
+  teams: [Team]
+}
+
+type Query {
+  players(top: Int): [Player]
+  teams: [Team]
+}
+
+type Team {
+  name: String
+}
